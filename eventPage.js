@@ -4,4 +4,9 @@ chrome.runtime.onMessage.addListener(function(request,sender,sendResponse)	{
 			chrome.pageAction.show(tabs[0].id);
 		});
 	}
+	if(request.todo == "refreshToken")	{
+		chrome.identity.getAuthToken({'interactive': false}, function(token)	{
+			chrome.storage.sync.set({"token":token});
+		});
+	}
 });

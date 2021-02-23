@@ -9,10 +9,19 @@
 
 <body>
 	<h1>Save to Sheet</h1>
-	<h3>Enter Gmail ID associated with Google Sheet to Save Delivery Order Data</h3>
-	<input type="text" id="email_field" placeholder="Enter Gmail ID" />
-	<button id="authorize">Authorize</button>
-	<button id="clear">Clear</button>
+	
+	<div id="email_div">
+		<h3>Enter Gmail ID associated with Google Sheet to Save Delivery Order Data</h3>
+		<input type="text" id="email_field" placeholder="Enter Gmail ID" />
+	</div>	
+	<div id="distribution_cycle_div">
+		<h3>Enter Distribution Cycle</h3>
+		<input type="text" id="distribution_cycle" placeholder="Enter Distribution Cycle" />
+	</div>
+	<div id="buttons">	
+		<button id="authorize">Authorize to Create Sheet</button>
+		<button id="clear">Clear</button>
+	</div>
 
 </body>
 </html>
