@@ -73,7 +73,6 @@ $(function()	{
 	});
 	
 	$("#clear").click(function()	{
-		//chrome.identity.removeCachedAuthToken();
 		
 		chrome.storage.sync.remove(["email","distribution_cycle","sheet_id","sheet_url"],function()	{
 			$("#email_field").val('');
