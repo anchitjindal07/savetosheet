@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(function(request,sender,sendResponse)	{
 		});
 	}
 	if(request.todo == "refreshToken")	{
-		chrome.identity.getAuthToken({'interactive': false}, function(token)	{
+		chrome.identity.getAuthToken({'interactive': true}, function(token)	{
 			chrome.storage.sync.set({"token":token});
 		});
 	}
